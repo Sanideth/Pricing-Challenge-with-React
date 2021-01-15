@@ -1,0 +1,25 @@
+:root {
+  --color-primary-violet: hsl(237, 63%, 64%);
+  --color-secondary-violet: hsl(236, 72%, 79%);
+  --color-gray-lighter: hsl(240, 78%, 98%);
+  --color-gray-light: hsl(234, 14%, 74%);
+  --color-gray-dark: hsl(233, 13%, 49%);
+  --color-gray-darker: hsl(232, 13%, 33%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
