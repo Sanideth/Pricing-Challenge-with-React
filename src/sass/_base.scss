@@ -21,5 +21,18 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
+  background-image: url("./img/bg-bottom.svg"), url("./img/bg-top.svg");
+  background-repeat: no-repeat, no-repeat;
+  color: var(--color-gray-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

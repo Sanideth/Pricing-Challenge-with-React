@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.theme-toggler-container {
+  display: inline-block;
+  height: 2.6rem;
+  width: 4.5rem;
+  background-image: linear-gradient(
+    to right,
+    var(--color-secondary-violet),
+    var(--color-primary-violet)
+  );
+  border-radius: 4rem;
+  position: relative;
+}
+.btn-theme {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+}
+
+.btn-list {
+  padding: 1rem 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-secondary-violet),
+    var(--color-primary-violet)
+  );
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
