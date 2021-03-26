@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pricing-Challenge-with-React/static/css/main.e3a371fe.chunk.css",
-    "main.js": "/Pricing-Challenge-with-React/static/js/main.25b2d6b4.chunk.js",
-    "main.js.map": "/Pricing-Challenge-with-React/static/js/main.25b2d6b4.chunk.js.map",
+    "main.js": "/Pricing-Challenge-with-React/static/js/main.f0fde914.chunk.js",
+    "main.js.map": "/Pricing-Challenge-with-React/static/js/main.f0fde914.chunk.js.map",
     "runtime-main.js": "/Pricing-Challenge-with-React/static/js/runtime-main.05e57d80.js",
     "runtime-main.js.map": "/Pricing-Challenge-with-React/static/js/runtime-main.05e57d80.js.map",
     "static/js/2.e5d456e1.chunk.js": "/Pricing-Challenge-with-React/static/js/2.e5d456e1.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.05e57d80.js",
     "static/js/2.e5d456e1.chunk.js",
     "static/css/main.e3a371fe.chunk.css",
-    "static/js/main.25b2d6b4.chunk.js"
+    "static/js/main.f0fde914.chunk.js"
   ]
 }
