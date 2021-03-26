@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Pricing-Challenge-with-React/static/css/main.e3a371fe.chunk.css",
+    "main.js": "/Pricing-Challenge-with-React/static/js/main.25b2d6b4.chunk.js",
+    "main.js.map": "/Pricing-Challenge-with-React/static/js/main.25b2d6b4.chunk.js.map",
+    "runtime-main.js": "/Pricing-Challenge-with-React/static/js/runtime-main.05e57d80.js",
+    "runtime-main.js.map": "/Pricing-Challenge-with-React/static/js/runtime-main.05e57d80.js.map",
+    "static/js/2.e5d456e1.chunk.js": "/Pricing-Challenge-with-React/static/js/2.e5d456e1.chunk.js",
+    "static/js/2.e5d456e1.chunk.js.map": "/Pricing-Challenge-with-React/static/js/2.e5d456e1.chunk.js.map",
+    "static/js/3.4ae24ebb.chunk.js": "/Pricing-Challenge-with-React/static/js/3.4ae24ebb.chunk.js",
+    "static/js/3.4ae24ebb.chunk.js.map": "/Pricing-Challenge-with-React/static/js/3.4ae24ebb.chunk.js.map",
+    "index.html": "/Pricing-Challenge-with-React/index.html",
+    "static/css/main.e3a371fe.chunk.css.map": "/Pricing-Challenge-with-React/static/css/main.e3a371fe.chunk.css.map",
+    "static/js/2.e5d456e1.chunk.js.LICENSE.txt": "/Pricing-Challenge-with-React/static/js/2.e5d456e1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Pricing-Challenge-with-React/static/media/bg-top.4980c1fd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05e57d80.js",
+    "static/js/2.e5d456e1.chunk.js",
+    "static/css/main.e3a371fe.chunk.css",
+    "static/js/main.25b2d6b4.chunk.js"
+  ]
+}
