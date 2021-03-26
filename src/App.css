@@ -20,21 +20,28 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  background-image: url("./img/bg-bottom.svg"), url("./img/bg-top.svg");
-  background-repeat: no-repeat, no-repeat;
   color: var(--color-gray-dark); }
 
 ul {
   list-style: none; }
 
 button {
-  border: none;
-  cursor: pointer; }
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s; }
 
 #root {
   height: 100vh;
   padding: 8rem 0;
-  background-color: var(--color-gray-lighter); }
+  background-color: var(--color-gray-lighter);
+  background-image: url("./img/bg-bottom.svg"), url("./img/bg-top.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right; }
+  @media only screen and (max-width: 50em) {
+    #root {
+      height: auto;
+      padding: 5rem 0; } }
 
 .header__container {
   display: flex;
@@ -57,11 +64,21 @@ button {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .main__price-cards {
+      flex-direction: column; } }
+  @media only screen and (max-width: 50em) {
+    .main__price-cards > *:not(:last-child) {
+      margin-bottom: 3rem; } }
 
 .main__price-card {
   text-align: center;
   padding: 4rem 3rem;
-  background-color: #fff; }
+  background-color: #fff;
+  flex-basis: 30%; }
+  @media only screen and (max-width: 50em) {
+    .main__price-card {
+      width: 75%; } }
   .main__price-card > *:not(:last-child) {
     margin-bottom: 2.5rem; }
   .main__price-card--left {
@@ -80,18 +97,32 @@ button {
       background-image: none;
       background-color: #fff;
       color: var(--color-primary-violet); }
+      .main__price-card--center > .btn-list:hover {
+        background-color: transparent;
+        color: #fff; }
   .main__price-card--right {
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem; }
+  .main__price-card--left > button:hover,
+  .main__price-card--right > button:hover {
+    background-image: none;
+    background-color: #fff;
+    color: var(--color-primary-violet);
+    border: 1px solid var(--color-primary-violet);
+    backface-visibility: visible; }
 
 .main__price {
   color: var(--color-gray-darker);
   font-size: 6vw;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   @media only screen and (min-width: 1200px) {
     .main__price {
       font-size: 7rem; } }
+  @media only screen and (max-width: 50em) {
+    .main__price {
+      font-size: 4rem; } }
 
 .main__currency {
   font-size: 4.5rem;
@@ -108,6 +139,9 @@ button {
   width: 100%;
   max-width: 120rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    .container {
+      max-width: 50rem; } }
 
 .theme-toggler-container {
   display: inline-block;
@@ -115,7 +149,8 @@ button {
   width: 4.5rem;
   background-image: linear-gradient(to right, var(--color-secondary-violet), var(--color-primary-violet));
   border-radius: 4rem;
-  position: relative; }
+  position: relative;
+  transition: all 0.4s; }
 
 .btn-theme {
   height: 2rem;
@@ -125,7 +160,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-100%, -50%); }
+  transform: translate(-100%, -50%);
+  transition: all 0.4s; }
 
 .btn-list {
   padding: 1rem 0;
@@ -141,3 +177,9 @@ button {
 
 .u-mb-m {
   margin-bottom: 3rem; }
+
+.active {
+  transform: translate(0, -50%); }
+
+.opaque {
+  opacity: 0.8; }

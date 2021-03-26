@@ -2,6 +2,10 @@
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 50rem;
+  }
 }
 
 .theme-toggler-container {
@@ -15,6 +19,7 @@
   );
   border-radius: 4rem;
   position: relative;
+  transition: all 0.4s;
 }
 .btn-theme {
   height: 2rem;
@@ -25,6 +30,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-100%, -50%);
+  transition: all 0.4s;
 }
 
 .btn-list {

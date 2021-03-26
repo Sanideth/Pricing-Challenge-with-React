@@ -7,6 +7,8 @@
   --color-gray-darker: hsl(232, 13%, 33%);
 }
 
+$bp-medium: 50em; //bp at 800px
+
 *,
 *::before,
 *::after {
@@ -23,8 +25,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  background-image: url("./img/bg-bottom.svg"), url("./img/bg-top.svg");
-  background-repeat: no-repeat, no-repeat;
   color: var(--color-gray-dark);
 }
 
@@ -33,6 +33,8 @@ ul {
 }
 
 button {
-  border: none;
+  border: 1px solid #fff;
   cursor: pointer;
+  outline: none;
+  transition: all 0.4s;
 }

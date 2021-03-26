@@ -2,3 +2,12 @@
 .u-mb-m {
   margin-bottom: 3rem;
 }
+
+//active class for button
+.active {
+  transform: translate(0, -50%);
+}
+
+.opaque {
+  opacity: 0.8;
+}

@@ -2,6 +2,14 @@
   height: 100vh;
   padding: 8rem 0;
   background-color: var(--color-gray-lighter);
+  background-image: url("./img/bg-bottom.svg"), url("./img/bg-top.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: auto;
+    padding: 5rem 0;
+  }
 }
 
 .header {
@@ -31,12 +39,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
+
+    & > *:not(:last-child) {
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__price-card {
     text-align: center;
     padding: 4rem 3rem;
     background-color: #fff;
+    flex-basis: 30%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 75%;
+    }
     & > *:not(:last-child) {
       margin-bottom: 2.5rem;
     }
@@ -62,11 +84,24 @@
         background-image: none;
         background-color: #fff;
         color: var(--color-primary-violet);
+        &:hover {
+          background-color: transparent;
+          color: #fff;
+        }
       }
     }
     &--right {
       border-top-right-radius: 0.7rem;
       border-bottom-right-radius: 0.7rem;
+    }
+
+    &--left > button:hover,
+    &--right > button:hover {
+      background-image: none;
+      background-color: #fff;
+      color: var(--color-primary-violet);
+      border: 1px solid var(--color-primary-violet);
+      backface-visibility: visible;
     }
   }
   &__price {
@@ -74,9 +109,13 @@
     font-size: 6vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media only screen and (min-width: 1200px) {
       font-size: 7rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 4rem;
     }
   }
   &__currency {
